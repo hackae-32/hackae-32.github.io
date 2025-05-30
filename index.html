@@ -1,30 +1,137 @@
-<!--=========================-!>
-Mau custom web ucapan online & tanpa watermark? Order Aja di Deka Tutorial !! (DM IG untuk order)
-+ Youtube: Deka Tutorial
-+ Tiktok: @deka_tutorial
-+ Instagram: deka_tutorial
-<-===========================-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Special For You</title>
-    <script src="https://dekatutorial.github.io/flwr/s.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ganti nama/judul website -->
+    <title>Websiteku iki boss</title>
+    <style>
+      body {
+        /* ganti background website */
+        background-image: url(https://i.pinimg.com/736x/90/c9/67/90c96761ef2e22853193fcd7409f30dc.jpg);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
-  <body>
-    <div class="open">
-      <i>❤️</i>
-      <span>Klik love nya</span>
-    </div>
+
+  <body class="justify-center flex">
+    <main
+      class="bg-white rounded mt-24 p-8 shadow-lg shadow-red-200 animate__animated animate__backInDown"
+    >
+      <!-- ganti gambar awal -->
+      <img
+        class="cat-img"
+        src="data:image/jpeg;base64,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"
+        alt="Picture of a cat"
+        width="200"
+      />
+      <div class="border-b mt-2 border-2"></div>
+      <div class="lh-1 text-center mt-4">
+        <!-- ganti nama -->
+        <h2 class="title text-red-400 text-2xl font-semibold">
+          Hei Brow siapa,
+        </h2>
+        <!-- ganti pertanyaan -->
+        <p class="title question fs-1 text-2xl font-bold text-gray-700">Gelem Ta Gak?</p>
+      </div>
+      <div class="buttons mt-5 flex justify-around">
+        <!-- ganti tulisan tombol -->
+        <button
+          type="button"
+          class="btn-yes bg-green-500 rounded text-white text-3xl px-2 pt-1 pb-2 animate__pulse animate__animated animate__infinite"
+        >
+          Gelem
+        </button>
+        <button
+          type="button"
+          class="btn-no bg-red-500 rounded text-white text-2xl px-2 pt-1 pb-2"
+        >
+          Gak
+        </button>
+      </div>
+      <div class="numbers hidden mt-5 flex justify-center">
+        <!-- ganti link -->
+        <a
+          href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyxbJAp9s2Q6CQjuS4Q9xzz6uz0b7jqxBYLA&s"
+          type="button"
+          class="bg-green-500 text-white py-1 px-2 rounded btn-yes w-100 text-xl font-bold"
+        >
+          <!-- ganti tulisan tombol link -->
+          iki bukaken</a
+        >
+      </div>
+    </main>
 
     <script>
-      ucapan = ``;
-      musik = ``;
-      nomorWhatsapp = ``;
-      idTelegram = ``;
+      const titleElement = document.querySelector(".title");
+      const buttonsContainer = document.querySelector(".buttons");
+      const numberContainer = document.querySelector(".numbers");
+      const yesButton = document.querySelector(".btn-yes");
+      const noButton = document.querySelector(".btn-no");
+      const catImg = document.querySelector(".cat-img");
+      const title = document.querySelector(".title");
+      const question = document.querySelector(".question");
 
-      DekaTutorial(ucapan, musik, nomorWhatsapp, idTelegram);
+      // jumlah gambar
+      const MAX_IMAGES = 3;
+
+      let play = true;
+      let count = 0;
+
+      // ganti gambar pake link gif yang kalian mau
+      let listGambar = [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRky4IR5h8aREVK9LC1PNBxdg-6BgiSfQaIhQ&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWI2rEOdCqCyWRe9AglyCiDnSGC6heFdD-mA&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyoZoI_yWz98ISon48MISiuR6AqIeKoLImPQ&s",
+      
+
+        // gambar kalo dijawab ya
+        "https://media1.tenor.com/m/77rqMj3uomoAAAAC/gritito.gif",
+      ];
+
+      yesButton.addEventListener("click", handleYesClick);
+
+      noButton.addEventListener("click", function () {
+        title.classList.add("hidden");
+        question.classList.add("hidden");
+        if (play) {
+          count++;
+          const imageIndex = Math.min(count, MAX_IMAGES);
+          changeImage(imageIndex);
+          updateNoButtonText();
+          if (count === MAX_IMAGES) {
+            play = false;
+          }
+        }
+      });
+
+      function handleYesClick() {
+        buttonsContainer.classList.add("hidden");
+        title.classList.add("hidden");
+        question.classList.add("hidden");
+        numberContainer.classList.remove("hidden");
+        changeImage(6);
+      }
+
+      // ganti kata-kata kalo ditolak
+      function generateMessage(count) {
+        const messages = ["Gak", "??", "???", "????", "?????", "<--"];
+
+        const messageIndex = Math.min(count, messages.length - 1);
+        return messages[messageIndex];
+      }
+
+      function changeImage(imageIndex) {
+        catImg.src = `${listGambar[imageIndex - 1]}`;
+      }
+
+      function updateNoButtonText() {
+        noButton.innerHTML = generateMessage(count);
+      }
     </script>
   </body>
 </html>
